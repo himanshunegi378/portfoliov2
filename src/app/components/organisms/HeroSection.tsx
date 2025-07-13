@@ -53,7 +53,7 @@ const HeroSection = () => {
           </Button>
         </div>
       </div>
-      <Dialog isOpen={isContactDialogOpen} onClose={() => setIsContactDialogOpen(false)} title="Contact Me">
+      <Dialog isOpen={isContactDialogOpen} onClose={() => setIsContactDialogOpen(false)}>
         <DialogHeader title={'Contact Me'} onClose={() => setIsContactDialogOpen(false)} />
         <DialogBody>
           <div className="flex gap-4 items-start">

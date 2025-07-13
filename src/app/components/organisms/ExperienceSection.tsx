@@ -1,5 +1,4 @@
 'use client'
-import Heading from "../atoms/Heading";
 import dynamic from "next/dynamic";
 const ExperienceTimeline = dynamic(
   () => import("../organisms/ExperienceTimeline"),

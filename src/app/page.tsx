@@ -21,7 +21,7 @@ export default function Home() {
                 width={240}
                 height={240}
               />
-              Things I've Built
+              Things I&apos;ve Built
             </Heading>
           </div>
 
@@ -38,14 +38,14 @@ export default function Home() {
                   {
                     icon: "🛠️",
                     label: "Favorite Tech",
-                    value: "React & Tailwind",
+                    value: "All tech",
                   },
                   { icon: "☕", label: "Fuel", value: "Black Coffee" },
                   { icon: "🎮", label: "Off-duty", value: "Gaming & Anime" },
                   {
                     icon: "💡",
                     label: "Currently learning",
-                    value: "Typescript",
+                    value: "Managers Path",
                   },
                 ]}
               />

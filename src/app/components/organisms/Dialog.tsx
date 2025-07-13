@@ -51,7 +51,7 @@ export const DialogHeader = ({ title, onClose }: { title: ReactNode | string; on
   /**
    * example:
    * ```tsx
-   * <Dialog isOpen={isOpen} onClose={onClose} title="Dialog Title">
+   * <Dialog isOpen={isOpen} onClose={onClose}>
    *   <DialogHeader title="Dialog Title" onClose={onClose} />
    *   <DialogBody>
    *     <p>Dialog content goes here.</p>
@@ -62,7 +62,7 @@ export const DialogHeader = ({ title, onClose }: { title: ReactNode | string; on
    * </Dialog>
    * ```
    */
-  export const Dialog = ({ isOpen, onClose, title, children }: { isOpen: boolean; onClose: () => void; title: string; children: React.ReactNode }) => {
+  export const Dialog = ({ isOpen, onClose, children }: { isOpen: boolean; onClose: () => void; children: React.ReactNode }) => {
     // Effect to handle the 'Escape' key press to close the dialog
     useEffect(() => {
       const handleEsc = (event: KeyboardEvent) => {

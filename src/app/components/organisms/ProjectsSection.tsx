@@ -1,7 +1,5 @@
 import React from "react";
-import Heading from "../atoms/Heading";
 import ProjectCard from "../molecules/ProjectCard";
-import Image from "next/image";
 
 const ProjectsSection = () => {
   // Sample projects data
