@@ -5,6 +5,13 @@
   --color-card-bg: #fdfdf8;
   --color-button-bg: #193c57;
   --color-tag-bg: #f0efee;
+
+  --color-dialog-header-bg: #f9f1e5;
+  --color-dialog-header-text: #193c57;
+  --color-dialog-body-bg: #fdfdf8;
+  --color-dialog-footer-bg: #fdfdf8;
+  --color-dialog-footer-text: #193c57;
+  
 }
 
 .color-button-bg {

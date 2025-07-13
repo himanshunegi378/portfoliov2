@@ -1,11 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Button from "../atoms/Button";
 import Text from "../atoms/Text";
 import Image from "next/image";
+import Link from "next/link";
+import { Dialog, DialogHeader, DialogBody } from "./Dialog";
 
 const HeroSection = () => {
+  const [isContactDialogOpen, setIsContactDialogOpen] = useState(false);
+
   return (
     <section
       id="hero"
@@ -39,14 +43,37 @@ const HeroSection = () => {
           experiences.
         </Text>
         <div className="space-x-4">
-          <Button type="button" onClick={() => {}}>
-            View Resume
-          </Button>
-          <Button type="button" onClick={() => {}}>
+          <Link href="/Himanshu_s_Resume.pdf" target="_blank" passHref>
+            <Button type="button">
+              View Resume
+            </Button>
+          </Link>
+          <Button type="button" onClick={() => setIsContactDialogOpen(true)}>
             Contact Me
           </Button>
         </div>
       </div>
+      <Dialog isOpen={isContactDialogOpen} onClose={() => setIsContactDialogOpen(false)} title="Contact Me">
+        <DialogHeader title={'Contact Me'} onClose={() => setIsContactDialogOpen(false)} />
+        <DialogBody>
+          <div className="flex gap-4 items-start">
+            <Image
+              src="/contact-me.png"
+              alt="Contact Me"
+              width={128}
+              height={128}
+              className=""
+            />
+            <div className="flex flex-col gap-4">
+              {/* contact number */}
+              <p>Phone: +91 8882856457</p>
+              {/* email */}
+              <p>Email: himanshunegi378@gmail.com</p>
+            </div>
+
+          </div>
+        </DialogBody>
+      </Dialog>
     </section>
   );
 };

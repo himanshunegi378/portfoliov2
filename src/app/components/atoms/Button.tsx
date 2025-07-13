@@ -6,7 +6,7 @@ import { cn } from "@/app/utils/cn";
 
 interface ButtonProps {
   children: ReactNode;
-  onClick: MouseEventHandler<HTMLButtonElement>;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
   type?: "button" | "submit" | "reset";
   className?: string;
   disabled?: boolean;
