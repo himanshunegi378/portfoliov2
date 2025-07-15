@@ -10,6 +10,7 @@ const ProjectsSection = () => {
       description:
         "Trying out intersection of expense logging and AI. Implemented a small feature where category is predicted based on the expense",
       techTags: ["Next.js", "TypeScript", "AI"],
+      liveDemoUrl: "https://www.expenselm.timercards.com/",
       githubUrl: "https://github.com/himanshunegi378/expenselm",
     },
     {
@@ -19,7 +20,7 @@ const ProjectsSection = () => {
         "Trying out an approach to create tools as addons that user can install from the app store. Just like chrome extensions. Also heavliy AI generated, I myself don't know what is going on",
       imageSrc: "/addon-ai.png",
       techTags: ["React", "Next.js", "TypeScript", "AI"],
-      liveDemoUrl: "https://addonlm.timercards.com/",
+      liveDemoUrl: "https://www.addonlm.timercards.com/",
       githubUrl: "https://github.com/himanshunegi378/AddonLM",
     },
     {
