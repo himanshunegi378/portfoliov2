@@ -5,6 +5,14 @@ const ProjectsSection = () => {
   // Sample projects data
   const projects = [
     {
+      id: 4,
+      title: 'Imperial',
+      imageSrc: "/imperial.png",
+      description:"AI based UI creator. like how v0 was initially. I am trying to crate a platform which  will enable users to establish a design system, and then leverage AI to generate user interfaces based on that system.",
+      techTags: ["react-ts", "langchain", "expressjs"],
+      liveDemoUrl: "https://www.imperial.timercards.com/",
+    },
+    {
       id: 3,
       title: "ExpenseLM",
       description:

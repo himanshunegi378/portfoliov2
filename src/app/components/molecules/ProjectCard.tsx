@@ -42,7 +42,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <h3 className="text-3xl font-semibold text-gray-800 mb-2 tracking-tight">
           {title}
         </h3>
-        <p className="text-gray-500 mb-4 leading-relaxed flex-1">{description}</p>
+        <p className="text-gray-500 mb-4 leading-tight flex-1">{description}</p>
 
         <div className="flex flex-wrap gap-2 mb-5">
           {techTags?.map((tag) => (
